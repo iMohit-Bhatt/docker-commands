@@ -40,7 +40,7 @@ and, ctrl^c to stop the container
 ###It is not mandatory to pull the image we can directly run any image without pulling. if the image is not present locally it will pull automatically.
 
 
-*************To check the downloaded images **********
+*************To check the downloaded images **********                                                                                                                                                                                                                                                                                                                                          
 -> docker images
 
 

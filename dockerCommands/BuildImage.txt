@@ -1,0 +1,26 @@
+like we have a structure as shown in the screenshot:-
+
+1.Create a DockerFile and add below lines
+
+$We have to downlaod the node.js image
+-> FROM node:19-alpline
+
+$Copy the files and folders whatever you want:
+-> COPY src /app/ (/app/ is the new directory in the container and src is the folder present in the local machine)
+
+$ Change the directory or working directory to install all things in right place:
+-> WORKDIR /app
+
+$ RUN npm install
+
+$ CMD "node" "server.js"
+
+
+
+2. Go to terminal: to build image
+
+docker build -t <image name> <location>
+->docker build -t node-app .
+
+3. check the image:
+-> docker image

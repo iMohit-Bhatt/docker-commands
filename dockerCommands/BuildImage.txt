@@ -22,5 +22,7 @@ $ CMD "node" "server.js"
 docker build -t <image name> <location>
 ->docker build -t node-app .
 
+--> now run the container in the same port.
+
 3. check the image:
 -> docker image

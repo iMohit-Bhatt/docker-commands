@@ -2,6 +2,7 @@
 -> docker pull <image name>:<tags>
 
 
+#####Docker run command always create a new container####
 ***************To run the container**************
 -> docker run <image name>:<tags> 
 and, ctrl^c to stop the container
@@ -19,6 +20,16 @@ and, ctrl^c to stop the container
 -> docker stop <container id>
 
 
+*****Run container with port binding to be accessed by the browser*****
+-> docker run -d -p<host port>:<container port> <image name>:<tags>
+
+
+*******Show all the container running or stopped********
+-> docker ps -a
+
+
+*******Start a stopped container*********
+-> docker start <container id>
 ###It is not mandatory to pull the image we can directly run any image without pulling. if the image is not present locally it will pull automatically.
 
 

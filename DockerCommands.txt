@@ -30,6 +30,13 @@ and, ctrl^c to stop the container
 
 *******Start a stopped container*********
 -> docker start <container id>
+
+
+*******give container a name*********
+-> docker run --name <name> -d -p<host port>:<container port> <image name>:<tag>
+
+
+#we can use container name instead of container id
 ###It is not mandatory to pull the image we can directly run any image without pulling. if the image is not present locally it will pull automatically.
 
 

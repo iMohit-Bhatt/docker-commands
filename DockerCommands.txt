@@ -1,0 +1,30 @@
+***************To pull an image*********************
+-> docker pull <image name>:<tags>
+
+
+***************To run the container**************
+-> docker run <image name>:<tags> 
+and, ctrl^c to stop the container
+
+
+******To run the container in the background and prints container ID***************88
+-> docker run -d or -detach <image name>:<tags>
+
+
+****To check the logs of the conatiner running in background****
+-> docker logs <container id>
+
+
+****To Stop the running container****
+-> docker stop <container id>
+
+
+###It is not mandatory to pull the image we can directly run any image without pulling. if the image is not present locally it will pull automatically.
+
+
+*************To check the downloaded images **********
+-> docker images
+
+
+*********To check the running containers****************
+-> docker ps
